@@ -1,0 +1,70 @@
+# Lightweight HMAC-Based Mutual Authentication Protocol (LHBAP)
+
+## Overview
+
+This repository contains the Python implementation and simulation of a Lightweight HMAC-Based Mutual Authentication Protocol (LHBAP) developed as part of an MPhil research study in Information Technology Education.
+
+The protocol is designed to support mutual authentication and session key establishment in resource-constrained IoT environments using HMAC-SHA256.
+
+## Research Objectives
+
+- Design a lightweight mutual authentication protocol.
+- Establish secure session keys between communicating entities.
+- Evaluate computational and communication overhead.
+- Compare the proposed protocol with selected existing authentication protocols.
+
+## Cryptographic Foundation
+
+The implementation uses:
+
+- HMAC-SHA256 for message authentication and integrity.
+- Nonces for freshness and replay protection.
+- Timestamps for checking message freshness.
+- HMAC-based session key derivation.
+
+## System Model
+
+The protocol involves three entities:
+
+1. Sensor Node (SN)
+2. Gateway (GW)
+3. Secure Provisioning Server (SPS)
+
+## Implementation
+
+The simulation was implemented using Python. The repository includes the protocol implementation, authentication procedures, replay-handling mechanisms, and performance evaluation.
+
+## Performance Evaluation
+
+The evaluation considers:
+
+- Computational cost
+- Communication cost
+- Runtime performance
+- Comparison with selected existing protocols
+
+The reported measurements are based on software simulation and should not be interpreted as physical IoT device measurements.
+
+## Requirements
+
+Install the required dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Simulation
+
+Open the Jupyter Notebook in the `notebooks/` directory using Google Colab or Jupyter Notebook and execute the cells in sequence.
+
+## Research Context
+
+This implementation supports the MPhil thesis:
+
+**A Lightweight HMAC-Based Mutual Authentication Protocol for Resource-Constrained IoT Systems.**
+
+Author: Samuel Boah
+
+## Disclaimer
+
+This repository is provided for academic and research purposes. The implementation and simulation results do not constitute evidence of deployment on physical IoT devices or automated formal verification.
